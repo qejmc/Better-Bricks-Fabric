@@ -12,7 +12,7 @@ import net.minecraft.util.Identifier;
 
 public class BetterBricksTab
 {
-    public static final ItemGroup PINK_GARNET_ITEMS_GROUP = Registry.register(Registries.ITEM_GROUP,
+    public static final ItemGroup BETTER_BRICKS_GROUP = Registry.register(Registries.ITEM_GROUP,
             Identifier.of(Betterbricks.MODID, "betterbricks_items"),
             FabricItemGroup.builder().icon(() -> new ItemStack(ModBlocks.TAN_BRICKS))
                     .displayName(Text.translatable("itemGroup.betterbricks"))
