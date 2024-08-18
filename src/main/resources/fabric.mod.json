@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "betterbricks",
+  "version": "${version}",
+  "name": "Better Bricks",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/betterbricks/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "com.qej.betterbricks.client.BetterbricksClient"
+    ],
+    "main": [
+      "com.qej.betterbricks.Betterbricks"
+    ]
+  },
+  "mixins": [
+    "betterbricks.mixins.json",
+    {
+      "config": "betterbricks.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
